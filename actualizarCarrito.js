@@ -7,7 +7,6 @@ export const actualizarCarrito = (carritoDeCompras) =>{
     precioTotal.innerText = carritoDeCompras.reduce((acc,el) => acc +(el.precio * el.cantidad), 0);
     //Añado al local storage el carrito
     localStorage.setItem("carrito", JSON.stringify(carritoDeCompras));
-
 }
 
 

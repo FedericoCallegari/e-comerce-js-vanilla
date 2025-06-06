@@ -38,10 +38,23 @@
     </header>
 
     <main id ="producto-contenedor">
+        <div class ="modal-container" id="modal_container">
+            <div class="modal-carrito step1">
+                <h3>Carrito</h3>
+                <div id="carrito-contenedor">
+                </div>
+                <!--Efectuar compra-->
+                <button id="cerrar" class="btn-modal">Cerrar</button>
+                <button id="continuar" class="btn-modal">Continuar</button>
+                <button id="vaciar" class="btn-modal"></button>
+                <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+            </div>
+        </div>
+        
 
     </main>
-
-
+    <script src="stock.js" type="module"></script>
+    <script src="App.js" type="module"></script>
     <script src="getData.js" type="module"></script>
     <script src="carritoIndex.js" type="module" ></script>
 </body>
