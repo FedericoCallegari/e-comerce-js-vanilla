@@ -1,3 +1,4 @@
+import { actualizarCarrito } from "./actualizarCarrito";
 import { productos } from "./stock";
 
 const contenedorCarrito = document.getElementById("carrito-contenedor");
@@ -233,7 +234,7 @@ botonVaciarCarrito.addEventListener('click',()=>{
     actualizarCarrito(carritoDeCompras);
     
   };
-  
+
 
 
 
