@@ -1,5 +1,5 @@
-import { actualizarCarrito } from "./actualizarCarrito";
-import { productos } from "./stock";
+import { actualizarCarrito } from "./actualizarCarrito.js";
+import { productos } from "./stock.js";
 
 const contenedorCarrito = document.getElementById("carrito-contenedor");
 const cantidadSteps = 2;
@@ -20,10 +20,11 @@ const terminarCompra = document.getElementById("terminar-compra");
 
 //Boton Vaciar carrito 
 
-botonVaciarCarrito.addEventListener('click',()=>{
+vaciarCarrito.addEventListener('click',()=>{
     const arrayCompras = carritoDeCompras
     arrayCompras.length = 0;
-  
+    console.log('CLICK');
+    
     actualizarCarrito(arrayCompras);
     vaciarDom();
   })

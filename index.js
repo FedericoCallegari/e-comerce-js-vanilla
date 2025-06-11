@@ -1,6 +1,6 @@
-import { actualizarCarrito } from "./actualizarCarrito";
-import { mostrarProductos } from "./app";
-import { eliminarProductoCarrito } from "./carritoIndex";
+import { actualizarCarrito } from "./actualizarCarrito.js";
+import { mostrarProductos } from "./App.js";
+import { eliminarProductoCarrito } from "./carritoIndex.js";
 
 const contenedorCarrito= document.getElementById("carrito-contenedor");
 let carritoStorage = [];

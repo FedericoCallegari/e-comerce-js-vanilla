@@ -1,5 +1,5 @@
-//import {carritoIndex} from "./carritoIndex,js";
-import { getData } from "./getData";
+import {carritoIndex} from "./carritoIndex.js";
+import { getData } from "./getData.js";
 console.log(getData);
 
 export const mostrarProductos = async () =>{
@@ -26,6 +26,7 @@ export const mostrarProductos = async () =>{
         const boton = document.getElementById(`boton${producto.id}`);
         
         boton.addEventListener('click', ()=>{
+            
             carritoIndex(producto.id)
         })
     })
