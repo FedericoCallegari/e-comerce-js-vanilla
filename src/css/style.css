@@ -69,7 +69,7 @@ header h1{
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease-in-out;
-    z-index: 9999;
+    z-index: 200;
   }
 
 .hidden {
