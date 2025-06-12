@@ -23,7 +23,6 @@ const terminarCompra = document.getElementById("terminar-compra");
 vaciarCarrito.addEventListener('click',()=>{
     const arrayCompras = carritoDeCompras
     arrayCompras.length = 0;
-    console.log('CLICK');
     
     actualizarCarrito(arrayCompras);
     vaciarDom();
@@ -47,7 +46,6 @@ vaciarCarrito.addEventListener('click',()=>{
     terminarCompra.addEventListener('click', function validarForm (evt){
     evt.preventDefault();
     let mensajesError = [];
-    console.log("pasa algo")
       if(mail.value === null || mail.value ===''){
       mensajesError.push('Ingrese su email');
     }
@@ -90,7 +88,6 @@ vaciarCarrito.addEventListener('click',()=>{
   
   //--->Funcion Cancelar Compra:
   cancelarCompra.addEventListener("click", () => {
-    console.log("terminar compra");
     stepActual = 1;
     const arrayCompras = carritoDeCompras
     arrayCompras.length = 0;
@@ -169,7 +166,6 @@ vaciarCarrito.addEventListener('click',()=>{
     if (localStorage.getItem("carrito")) {
       carritoDeCompras = JSON.parse(localStorage.getItem("carrito"));
     }
-    console.log(carritoDeCompras);
     let productoRepetido = carritoDeCompras.find(
       (producto) => producto.id == productoId
     );
@@ -179,7 +175,6 @@ vaciarCarrito.addEventListener('click',()=>{
   
   //------------->Eliminar Producto<----------------//
   export const eliminarProductoCarrito = (productoId, productoNombre) => {
-    console.log(productoNombre);
     if (localStorage.getItem("carrito")) {
       carritoDeCompras = JSON.parse(localStorage.getItem("carrito"));
     }

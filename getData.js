@@ -5,6 +5,7 @@ const getData = async ()=>{
         
         return data;
     } catch (error){
+        alert(`ERROR ${error}`)
         console.log('hubo un error', error)
     }
 }
