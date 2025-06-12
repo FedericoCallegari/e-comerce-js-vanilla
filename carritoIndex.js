@@ -67,7 +67,6 @@ vaciarCarrito.addEventListener('click',()=>{
   
     if (mensajesError == 0){
       terminarCompra.addEventListener("click", function compraConfirm(evt){
-      console.log("terminar compra");
       stepActual = 1;
       const arrayCompras = carritoDeCompras
       arrayCompras.length = 0;
@@ -78,7 +77,7 @@ vaciarCarrito.addEventListener('click',()=>{
       Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'La compra se a realizado con exito.',
+        title: 'La compra se realizo con exito.',
         showConfirmButton: false,
         timer: 2000
       })
@@ -102,7 +101,7 @@ vaciarCarrito.addEventListener('click',()=>{
     Swal.fire({
       position: 'center',
       icon: 'error',
-      title: 'La compra a sido cancelada.',
+      title: 'La compra fue cancelada.',
       showConfirmButton: false,
       timer: 2000
     })
