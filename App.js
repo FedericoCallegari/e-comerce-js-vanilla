@@ -1,6 +1,6 @@
 import {carritoIndex} from "./carritoIndex.js";
 import { getData } from "./getData.js";
-console.log(getData);
+
 
 export const mostrarProductos = async () =>{
 

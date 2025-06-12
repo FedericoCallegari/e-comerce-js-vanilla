@@ -13,9 +13,7 @@ const bodyBackground = document.querySelector('.main-container');
 
 abrirCarrito.addEventListener('click', () => {
     modalContenedor.classList.toggle('modal-active');
-    console.log('click');
     bodyBackground.classList.toggle('background-active')
-    console.log(bodyBackground);
 })
 
 cerrarCarrito.addEventListener('click', () => {
